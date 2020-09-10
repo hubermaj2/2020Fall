@@ -1,0 +1,28 @@
+<head>
+    <link href="./main.css" rel="stylesheet"/>
+    <title>Test page</title>
+</head>
+<body>
+    <div id="app">
+        <h1 :style="{ fontSize: size + 'px' }" @click="grow()">{{ message }}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var a = 'New Paltz'
+    </script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'This is My Test Page',
+                size: 72
+            },
+            methods:{
+                grow(){
+                    this.size += 5;
+                }
+            }
+        })
+    </script>
+</body>

@@ -1,1 +1,1 @@
-var b = 'Oneonta'
+var b = 'Oneonta';

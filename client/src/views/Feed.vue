@@ -6,6 +6,7 @@
             <div class="column is-two-thirds">
                 <Post v-for=" (x, i) in posts " 
                       :key="i"
+                      :i="i"
                       :post="x" /> 
             </div>
             <div class="column is-one-third">
@@ -33,7 +34,12 @@ export default {
 </script>
 
 <style>
-    .card {
-        margin-bottom: 30px ;
+    time{
+        font-size: smaller;
+        font-style: italic;
+        float: right;
+    }
+    .card .card-content .media {
+        margin: 0;
     }
 </style>

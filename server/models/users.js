@@ -15,5 +15,19 @@ async function add(name, age){
     data.push({name, age});
 }
 
+function rand() {
+    var someVal = 0;
+    const p = new Promise((resolve, reject)=>{
 
-module.exports = { getAll, add, search: async q => data.filter(x=> x.name == q) }
+    })
+    setTimeout(() => {
+        for (let index = 0; index < 999*999; index++){
+            someVal = index * Math.random();
+        }
+        resolve(someVal)
+    }, 1);
+    return;
+}
+
+
+module.exports = { getAll, rand, add, search: async q => data.filter(x=> x.name == q) }
